@@ -37,4 +37,27 @@ Before reassigning an incident, include:
 - The suspected service or component and the reason for the new assignment group.
 - Any urgency, customer communication, or escalation requirements.
 
+### Work note updates
+
+Add a work note when initial triage is complete, after a material investigation result or mitigation, before and after a handoff, and whenever the incident status, impact, or owner changes. Keep notes factual, time-stamped in UTC, and free of credentials, customer-sensitive data, or unverified conclusions.
+
+Each work note should include:
+
+- Current impact, affected scope, and incident status.
+- Evidence observed, including UTC timestamps, alert IDs, error messages, and relevant log or dashboard references.
+- Actions completed and their results, including mitigations and validation outcomes.
+- The assignment or escalation decision and the reason for it.
+- The current owner, next action, expected update time, and any blockers or dependencies.
+
+Use this format:
+
+```text
+[YYYY-MM-DD HH:MM UTC] Status: <investigating|mitigating|monitoring|resolved>
+Impact: <affected users, services, and business effect>
+Evidence: <observations and timestamps>
+Action: <work performed>
+Result: <outcome and validation>
+Next: <owner, next action, and expected update time>
+```
+
 Do not assign an incident based solely on a keyword. If several groups may be involved, assign the group that owns the primary failing component and link or notify dependent teams as needed.
